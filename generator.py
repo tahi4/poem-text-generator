@@ -44,8 +44,7 @@ def generate_text(length, temperature):
             x_predictions[0, t, char_to_index[char]] = 1
 
         predictions = model.predict(x_predictions, verbose=0)[0]
-        next_index = sample(predictions,
-                                 temperature)
+        next_index = sample(predictions, temperature)
         next_character = index_to_char[next_index]
 
         generated += next_character
