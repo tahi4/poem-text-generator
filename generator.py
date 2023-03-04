@@ -8,7 +8,7 @@ import random
 
 
 filepath = tf.keras.utils.get_file('shakespeare.txt', 'https://storage.googleapis.com/download.tensorflow.org/data/shakespeare.txt')
-text = open(filepath, 'rb').read().decode(encoding='utf-8').lower() #works!!
+text = open(filepath, 'rb').read().decode(encoding='utf-8').lower() 
 
 
 characters = sorted(set(text))  
